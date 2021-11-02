@@ -1,3 +1,10 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,51 +12,91 @@
 }
 
 html, body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-/*     display: flex; */
-
+    font-family: 'Roboto Slab' , serif;
+    line-height: 1.5;
 }
 
-.top-nav{
-    display: flex;
+
+a .topnav{
+color:#2BAAEC ;
 }
 
-.top-nav .container{
-    justify-content: space-between;
-}
+
+
+
+
+
+
+
+
+
 
 .container{
     width: 100%;
     margin: auto;
-    padding: 0 .5rem;
+    padding: 1.5rem;
+    border: 1px solid grey;
 }
 
-.span-header{
-    color: #2BAAEC;
-    
-}
-
-
-.navbar{
-    background-color:#FFFFFF ;
+.nav-navbar{
     display: flex;
-    border: 1px solid black;
+
+}
+
+ul a{
+    text-decoration: none;
+    display: flex;
+    padding: 2rem;
+    color: #363636;
+    font-size: 18px;
 }
 
 .navbar .container{
     display: flex;
-/*     justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
 }
 
-.navbar-nav{
-    list-style: none;
-    display: flex;
-
+.header-dent{
+    font-size:24px ;
+    margin-left: 5rem;
 }
 
-.nav-link{
-    color:#363636 ;
-    text-decoration: none;
-    margin-left: 2rem;
+
+
+.span-clinic{
+    color:#2BAAEC ;
 }
+
+.text-stoma{
+    font-weight: bold;
+    font-size: 16px;
+    color: #626262;
+    margin-left: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* @media (min-width: 768px){
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+    }
+} */
