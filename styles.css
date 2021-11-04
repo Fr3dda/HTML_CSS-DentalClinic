@@ -14,53 +14,70 @@
 html, body{
     font-family: 'Roboto Slab' , serif;
     line-height: 1.5;
+    
 }
 
-
-a .topnav{
-color:#2BAAEC ;
-}
-
-
-
-
-
-
-
-
-
-
-
-.container{
+/* .container{
     width: 100%;
     margin: auto;
-    padding: 1.5rem;
-    border: 1px solid grey;
-}
+} */
 
-.nav-navbar{
+.container{
     display: flex;
+    margin: auto;
+/*     justify-content: space-between;
+    width: 100%;
+    align-items: center; */
+}
+
+.container img {
 
 }
 
-ul a{
+
+                          /* TOP_NAV */
+
+
+.topnav {
+    padding: .2rem 1rem;
+    border: 1px solid hsla(0, 0%, 37%, 0.623);
+    width: 100%;
+
+}
+
+.text-topnav{
+    font-size: 20px;
+}
+
+
+
+.fab{
     text-decoration: none;
-    display: flex;
-    padding: 2rem;
-    color: #363636;
-    font-size: 18px;
+    color: #2BAAEC;
+    margin: 10px;
+    font-size: 20px;
+    
+    
 }
 
-.navbar .container{
+.fab:hover{
+    color: #25E6C8;
+}
+
+.topnav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
+                        /* NAV_BAR */
+
 .header-dent{
     font-size:24px ;
     margin-left: 5rem;
 }
+
 
 
 
@@ -73,6 +90,62 @@ ul a{
     font-size: 16px;
     color: #626262;
     margin-left: 5rem;
+} 
+
+
+
+                            /* SHOW_CASE_1 */
+
+
+
+#showcase-1 {
+    background-color: #DEDEDE;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.content{
+    align-self: center;
+    text-align: center;
+    height: 100%;
+    padding: 5rem;
+}
+
+.text{
+    margin-bottom: 3rem;
+    color:#363636 ;
+}
+
+.text h3{
+    font-size: 3.7rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    width: 100%;
+    
+}
+
+.text p{
+    text-align: left;
+}
+
+.btn{
+    padding: .75rem 2.5rem;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    background-color: #25E6C8;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    text-align: left;
+}
+
+#showcase-1 img{
+    height: 500px;
 }
 
 
@@ -85,18 +158,24 @@ ul a{
 
 
 
-/* @media (min-width: 768px){
-    .container {
-        max-width: 720px;
-    }
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+@media(min-width:720px){
+
 }
-@media (min-width: 992px){
-    .container {
-        max-width: 960px;
-    }
-}
-@media (min-width: 1200px){
-    .container {
-        max-width: 1140px;
-    }
-} */
