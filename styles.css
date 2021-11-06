@@ -22,20 +22,27 @@ html, body{
     margin: auto;
 } */
 
+a{
+    text-decoration: none;
+}
+
 .container{
     display: flex;
     margin: auto;
-/*     justify-content: space-between;
+    justify-content: space-between;
     width: 100%;
-    align-items: center; */
+    align-items: center;
+}
+/* TOP_NAV */
+
+.container .topnav {
+    padding: 0;
+
 }
 
-.container img {
-
+.logo{
+    margin-right: .5rem;
 }
-
-
-                          /* TOP_NAV */
 
 
 .topnav {
@@ -45,8 +52,23 @@ html, body{
 
 }
 
-.text-topnav{
-    font-size: 20px;
+.top-nav-brand {
+
+  display: flex;
+  margin-left: 5rem;
+  width: auto;
+  
+ 
+}
+
+
+
+
+.text-topnav p{
+    font-size: 16px;
+
+    justify-content: flex-start;
+
 }
 
 
@@ -73,30 +95,46 @@ html, body{
 
                         /* NAV_BAR */
 
+.header-icon{
+    display: flex;
+ }
+
 .header-dent{
-    font-size:24px ;
-    margin-left: 5rem;
+    font-size:24px ;  
+    display: flex;
+    font-weight: normal;
 }
-
-
-
-
 .span-clinic{
     color:#2BAAEC ;
 }
-
+.h3-p{
+    margin-left: .5rem;
+    margin-top: 1rem;
+}
 .text-stoma{
-    font-weight: bold;
+    font-weight: normal;
     font-size: 16px;
-    color: #626262;
-    margin-left: 5rem;
+    color: #626262;  
 } 
+.nav-navbar{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    
+}
+.nav-navbar a{
+    display: flex;
+    margin: 1.5rem;
+}
 
 
 
                             /* SHOW_CASE_1 */
 
-
+#showcase-1 .container{
+    display: flex;
+    width: 80%;
+}
 
 #showcase-1 {
     background-color: #DEDEDE;
@@ -107,22 +145,25 @@ html, body{
 }
 
 .content{
+    display: flex;
     align-self: center;
-    text-align: center;
+  /*   text-align: center; */
     height: 100%;
     padding: 5rem;
 }
 
-.text{
+.text-showcase{
+    /* display: flex; */
+    align-content: center;
     margin-bottom: 3rem;
     color:#363636 ;
 }
 
-.text h3{
+.text-showcase h3{
     font-size: 3.7rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
-    text-align: left;
+    text-align: center;
     width: 100%;
     
 }
@@ -141,7 +182,7 @@ html, body{
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
-    text-align: left;
+
 }
 
 #showcase-1 img{
