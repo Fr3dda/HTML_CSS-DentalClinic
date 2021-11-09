@@ -222,17 +222,20 @@ a{
 }
 
 
-
-
+#showcase-2 .container{
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+}
 #second-half{
     margin: 1rem;
     width: 690px;
- 
+    
     font-size: 18px;
 }
 
 #first-half{
-
+    
     margin: 1rem;
     width: 690px;
     font-size: 18px;
@@ -250,27 +253,33 @@ a{
 
 
 
+#boxes{
+    text-align: center;
+    position: relative;
+    top: 300px;
+    right: 1000px;
+}
 
 
-
-#leftbox {
+/* 
+#left-box {
     float:left; 
     background:Red;
     width:25%;
     height:280px;
 }
-#middlebox{
+#middle-box{
     float:left; 
     background:Green;
     width:50%;
     height:280px;
 }
-#rightbox{
+#right-box{
     float:right;
     background:blue;
     width:25%;
-    height:280px;
-}
+    height:280px; */
+
 h1{
     color:green;
     text-align:center;
