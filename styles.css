@@ -36,7 +36,7 @@ a{
 /* TOP_NAV */
 
 .container .topnav {
-    padding: 0;
+    padding: 5rem;
 
 }
 
@@ -121,12 +121,14 @@ a{
     color: #626262;  
 } 
 .nav-navbar{
+    
     padding: 2rem;
     display: flex;
     justify-content: space-between;
     
 }
 .nav-navbar a{
+    color: black;
     display: flex;
     margin: 1.5rem;
 }
@@ -209,6 +211,7 @@ a{
 } */
 
 .blue-line{
+    background-color:#25E6C8 ;
     border: 3px solid #25E6C8;
     border-radius: 10px;
     height: 1px;
@@ -279,7 +282,66 @@ a{
 
 
 
-  
+  /* SHOWCASE 3 Services */
+
+#services{
+    background-color: #F7F7F7;
+    padding-top: 5rem;
+    
+}
+
+#services .container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#services h3 {
+    font-size: 40px;
+    font-weight: normal;
+    border-bottom: 5px solid #25E6C8;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding-bottom: 10px;
+
+}
+
+#services h3::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: px solid #25E6C8;
+    height: 0px;
+    width: 300px;
+    left: 350px;
+
+}
+
+
+.services-header{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#services img{
+    margin: 1rem;
+    height: 150px;
+    width: 150px;
+    padding: 30px;
+}
+
+#services .grid-item img{
+display: flex;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+background-color: #25E6C8;
+}
 
 
 
