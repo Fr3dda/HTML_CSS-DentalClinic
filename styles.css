@@ -53,9 +53,11 @@ a{
 }
 
 .top-nav-brand {
-
-  display: flex;
-  /* margin-left: 5rem; */
+    width: 80%;
+display: flex;
+align-items: center; 
+justify-content: center; 
+  
   width: auto;
   
  
@@ -70,7 +72,9 @@ a{
     justify-content: flex-start;
 
 }
-
+.collapse:not(.show) {
+    display: none;
+  }
 .social-icons{
     display: flex;
     margin-right: 41px;
@@ -344,10 +348,45 @@ background-color: #25E6C8;
 }
 
 
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  color: var(--primary-color)
+}
+
+
+/* Appointment */
+
+.appoint-container{
+    background-color:#2BAAEC ;
+    height: 10vw;
+    border-bottom: 4px solid #6fc0ec8f;
+ 
+}
 
 
 
 
+.footer-container{
+
+}
+.foot-bg{
+    height: 20%;
+    background-color:#2BAAEC ;
+    
+}
+.foot-bg p{
+   padding: 2rem ;
+}
+.foot-text p{
+    font-size: 16px;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+
+}
 @media (min-width: 768px){
     .container{
         max-width: 720px;
@@ -355,13 +394,25 @@ background-color: #25E6C8;
     .topnav .container{
         display: flex;
     }
+    .tog-nav-brand{
+        height: 2rem;
+    }
+    .navbar-toggler {
+        display: none;
+      }
+      .collapse:not(.show) {
+        display: block;
+      }
+      .navbar-nav {
+        flex-direction: row;
+      }
 
 }
 @media (min-width: 992px){
     .container{
         max-width: 960px;
     }
-}
+
 @media(min-width: 1200px){
     .container{
         max-width: 1140px;
