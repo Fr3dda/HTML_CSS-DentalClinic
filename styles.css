@@ -17,10 +17,7 @@ html, body{
     
 }
 
-/* .container{
-    width: 100%;
-    margin: auto;
-} */
+
 
 a{
     text-decoration: none;
@@ -158,7 +155,7 @@ justify-content: center;
     align-self: center;
     height: 100%;
     padding: 5rem;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
 }
 
 .text-showcase{
@@ -358,20 +355,43 @@ background-color: #25E6C8;
 
 
 /* Appointment */
-
-.appoint-container{
+#appointments{
     background-color:#2BAAEC ;
-    height: 10vw;
+    height: 200px;
     border-bottom: 4px solid #6fc0ec8f;
- 
 }
 
 
-
-
-.footer-container{
-
+   
+   
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}  
+.flex-container p{
+    color: #fff;
+    font-size: 30px;
 }
+.flex-container button{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 220px;
+    border-radius: 15px;
+    border: none;
+    color:#2BAAEC ;
+    cursor: pointer;
+}
+.flex-container button:hover{
+    transform: scale(.9);
+}
+    
+
+
+
 .foot-bg{
     height: 20%;
     background-color:#2BAAEC ;
@@ -387,10 +407,25 @@ background-color: #25E6C8;
     display: flex;
 
 }
-@media (min-width: 768px){
+@media (max-width: 425px){
     .container{
-        max-width: 720px;
+        min-width: 390px;
     }
+    #showcase-1 img {
+        display: none;
+    }
+    #showcase-2 img {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px){
+    .container{
+        min-width: 720px;
+    }
+    /* Topnav */
+
     .topnav .container{
         display: flex;
     }
@@ -406,6 +441,57 @@ background-color: #25E6C8;
       .navbar-nav {
         flex-direction: row;
       }
+
+      /* Showcase 1 */
+
+      #showcase-1 img {
+          display: none;
+      }
+      #showcase-2 img {
+          display: none;
+      }
+
+    /* Showcase 2 */
+
+    .text-showcase-about {
+        position: relative;
+        margin-left: 50px;
+    }
+    .text-showcase-about h3 {
+        position: relative;
+        margin-left: 100px;
+    }
+    .text-showcase-about .grid-container{
+        margin-left: 60px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    } 
+    .text-showcase-about .grid-container h1{
+        font-size: 30px;
+    }
+
+    /* Appointment */
+
+    #appointments{
+        height: 10rem;
+    }
+
+    .flex-container p{
+        font-size: 20px;
+        width: 35%;
+    }
+    .flex-container button{
+        padding: 8px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    /* Footer */
+
+    .foot-bg{
+        height: 100%;
+    }
+
 
 }
 @media (min-width: 992px){
